@@ -1,9 +1,8 @@
 import numpy as np
 from scipy.optimize import minimize
 
-def evaluate_positions(positions, field_length, field_width):
+def calcola_posizione(positions, field_length, field_width):
     # Calculate the distance between all pairs of player positions
-    distances = np.linalg.norm(positions[:, np.newaxis] - positions, axis=2)
     
     # Calculate the total distance that needs to be minimized
     total_distance = np.sum(distances)
