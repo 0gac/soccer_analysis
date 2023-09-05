@@ -1,5 +1,4 @@
 import numpy as np
-from scipy.optimize import minimize
 
 def calcola_posizione(positions, field_length, field_width):
     # Calculate the distance between all pairs of player positions
